@@ -1,0 +1,16 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log
+save_photo.ps1
+
+# Documentation files (optional - remove these if you want them in repo)
+*.md
+!README.md

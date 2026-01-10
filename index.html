@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amil Julius G. Recio | IT Intern Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-950 text-gray-100 font-['Inter']">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full bg-slate-950/95 backdrop-blur-md z-50 border-b border-cyan-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2 group cursor-pointer">
+                    <div class="w-8 h-8 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-lg flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
+                        <span class="text-white font-bold text-lg">&lt;/&gt;</span>
+                    </div>
+                    <span class="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">amiljuliusrecio</span>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-cyan-400">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-2">
+                <a href="#home" class="block nav-link px-2 py-2">Home</a>
+                <a href="#about" class="block nav-link px-2 py-2">About</a>
+                <a href="#skills" class="block nav-link px-2 py-2">Skills</a>
+                <a href="#projects" class="block nav-link px-2 py-2">Projects</a>
+                <a href="#experience" class="block nav-link px-2 py-2">Experience</a>
+                <a href="#contact" class="block nav-link px-2 py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen pt-20 px-4 sm:px-6 lg:px-8 flex items-center justify-center relative overflow-hidden">
+        <!-- Animated Background -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="animated-bg"></div>
+            <div class="absolute top-20 right-10 w-72 h-72 bg-blue-600/10 rounded-full blur-3xl animate-blob"></div>
+            <div class="absolute bottom-20 left-10 w-72 h-72 bg-cyan-600/10 rounded-full blur-3xl animate-blob animation-delay-2000"></div>
+            <div class="absolute top-1/2 right-1/4 w-72 h-72 bg-purple-600/10 rounded-full blur-3xl animate-blob animation-delay-4000"></div>
+        </div>
+
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
+            <!-- Left Content -->
+            <div class="space-y-6">
+                <div class="inline-block">
+                    <span class="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/50 text-cyan-400 text-sm font-medium flex items-center space-x-2">
+                        <span class="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></span>
+                        <span>IT intern ready to contribute</span>
+                    </span>
+                </div>
+
+                <h1 class="text-5xl md:text-7xl font-bold space-y-2">
+                    <span class="block text-white">Amil Julius G. Recio</span>
+                    <span class="block bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">IT Intern & Student</span>
+                </h1>
+
+                <p class="text-xl text-gray-300 leading-relaxed max-w-2xl">
+                    Dedicated IT student seeking an internship opportunity to apply classroom knowledge in a real business environment. Skilled in web development, database systems, and troubleshooting with a strong focus on teamwork, communication, and problem-solving.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#projects" class="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center space-x-2">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="px-8 py-4 border-2 border-cyan-500 rounded-lg font-semibold hover:bg-cyan-500/10 transition-all duration-300 inline-flex items-center justify-center space-x-2">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+
+                <!-- Stats -->
+                <div class="grid grid-cols-3 gap-6 pt-8">
+                    <div class="stat-card">
+                        <div class="text-3xl font-bold text-cyan-400">12+</div>
+                        <div class="text-sm text-gray-400">Academic projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="text-3xl font-bold text-blue-400">3+</div>
+                        <div class="text-sm text-gray-400">Years studying IT</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="text-3xl font-bold text-purple-400">4</div>
+                        <div class="text-sm text-gray-400">Technical certifications</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Code Animation -->
+            <div class="hidden md:flex justify-center">
+                <div class="relative w-full max-w-md">
+                    <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl blur opacity-30"></div>
+                    <div class="relative bg-slate-900 border border-cyan-500/30 rounded-xl p-6 overflow-hidden">
+                        <div class="flex items-center space-x-2 mb-4 pb-4 border-b border-gray-700">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        </div>
+                        <pre class="text-sm md:text-base font-mono text-cyan-300 leading-relaxed whitespace-pre-wrap break-words">
+<code id="code-animation" class="block"></code>
+                        </pre>
+                        <div class="absolute bottom-0 right-0 w-32 h-32 bg-gradient-to-l from-cyan-500/20 to-transparent blur-3xl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-cyan-400"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 relative">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center">
+                <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">About Me</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        I am an IT student focused on web development, database systems, and troubleshooting. I enjoy turning classroom concepts into working solutions and collaborating with others to keep projects moving.
+                    </p>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        My current toolkit includes HTML, CSS, JavaScript, Flask, PHP, SQL, and database management. I value clean, maintainable code and clear communication, and I pick up new technologies quickly.
+                    </p>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        I'm actively seeking an internship where I can apply what I've learned, contribute to real-world projects, and continue sharpening my problem-solving and teamwork skills.
+                    </p>
+
+                    <div class="pt-4 space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-cyan-400"></i>
+                            <span class="text-gray-300">Web development (HTML, CSS, JavaScript, Flask, PHP)</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-cyan-400"></i>
+                            <span class="text-gray-300">SQL & database management</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-cyan-400"></i>
+                            <span class="text-gray-300">Data structures & algorithms</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-cyan-400"></i>
+                            <span class="text-gray-300">Debugging, troubleshooting, and teamwork</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Image Placeholder -->
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl blur opacity-30"></div>
+                    <div class="relative bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl overflow-hidden border border-cyan-500/30 h-96">
+                        <img src="amil.jpg" alt="Profile Photo" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 relative">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center">
+                <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Technical Skills</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Frontend -->
+                <div class="skill-card">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <i class="fas fa-code text-2xl text-cyan-400"></i>
+                        <h3 class="text-xl font-bold">Frontend</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-2">
+                                <span>HTML & CSS</span>
+                                <span class="skill-pulse" aria-hidden="true"></span>
+                            </div>
+                            <div class="skill-meter">
+                                <div class="skill-meter-fill" data-fill="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-2">
+                                <span>JavaScript</span>
+                                <span class="skill-pulse" aria-hidden="true"></span>
+                            </div>
+                            <div class="skill-meter">
+                                <div class="skill-meter-fill" data-fill="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-2">
+                                <span>Flask & PHP</span>
+                                <span class="skill-pulse" aria-hidden="true"></span>
+                            </div>
+                            <div class="skill-meter">
+                                <div class="skill-meter-fill" data-fill="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-2">
+                                <span>Responsive Design</span>
+                                <span class="skill-pulse" aria-hidden="true"></span>
+                            </div>
+                            <div class="skill-meter">
+                                <div class="skill-meter-fill" data-fill="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-card">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <i class="fas fa-server text-2xl text-blue-400"></i>
+                        <h3 class="text-xl font-bold">Backend</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-2">
+                                <span>SQL & Database Management</span>
+                                <span class="skill-pulse" aria-hidden="true"></span>
+                            </div>
+                            <div class="skill-meter">
+                                <div class="skill-meter-fill" data-fill="88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-2">
+                                <span>Data Structures & Algorithms</span>
+                                <span class="skill-pulse" aria-hidden="true"></span>
+                            </div>
+                            <div class="skill-meter">
+                                <div class="skill-meter-fill" data-fill="82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-2">
+                                <span>Object-Oriented Programming</span>
+                                <span class="skill-pulse" aria-hidden="true"></span>
+                            </div>
+                            <div class="skill-meter">
+                                <div class="skill-meter-fill" data-fill="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-2">
+                                <span>API Development & CRUD</span>
+                                <span class="skill-pulse" aria-hidden="true"></span>
+                            </div>
+                            <div class="skill-meter">
+                                <div class="skill-meter-fill" data-fill="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps & Tools -->
+                <div class="skill-card">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <i class="fas fa-cogs text-2xl text-purple-400"></i>
+                        <h3 class="text-xl font-bold">Tools & Platforms</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-2">
+                                <span>Git & GitHub</span>
+                                <span class="skill-pulse" aria-hidden="true"></span>
+                            </div>
+                            <div class="skill-meter">
+                                <div class="skill-meter-fill" data-fill="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-2">
+                                <span>VS Code & IDEs</span>
+                                <span class="skill-pulse" aria-hidden="true"></span>
+                            </div>
+                            <div class="skill-meter">
+                                <div class="skill-meter-fill" data-fill="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-2">
+                                <span>Linux & Command Line</span>
+                                <span class="skill-pulse" aria-hidden="true"></span>
+                            </div>
+                            <div class="skill-meter">
+                                <div class="skill-meter-fill" data-fill="78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-2">
+                                <span>Debugging & Troubleshooting</span>
+                                <span class="skill-pulse" aria-hidden="true"></span>
+                            </div>
+                            <div class="skill-meter">
+                                <div class="skill-meter-fill" data-fill="88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <!-- Databases -->
+                <div class="skill-card">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <i class="fas fa-database text-2xl text-green-400"></i>
+                        <h3 class="text-xl font-bold">Databases</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-2">
+                                <span>MySQL / SQL Server</span>
+                                <span class="skill-pulse" aria-hidden="true"></span>
+                            </div>
+                            <div class="skill-meter">
+                                <div class="skill-meter-fill" data-fill="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-2">
+                                <span>MongoDB Basics</span>
+                                <span class="skill-pulse" aria-hidden="true"></span>
+                            </div>
+                            <div class="skill-meter">
+                                <div class="skill-meter-fill" data-fill="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-2">
+                                <span>Database Design</span>
+                                <span class="skill-pulse" aria-hidden="true"></span>
+                            </div>
+                            <div class="skill-meter">
+                                <div class="skill-meter-fill" data-fill="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-2">
+                                <span>Data Modeling</span>
+                                <span class="skill-pulse" aria-hidden="true"></span>
+                            </div>
+                            <div class="skill-meter">
+                                <div class="skill-meter-fill" data-fill="78%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-card">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <i class="fas fa-lightbulb text-2xl text-yellow-400"></i>
+                        <h3 class="text-xl font-bold">Soft Skills</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-2">
+                                <span>Analytical & logical thinking</span>
+                                <span class="skill-pulse" aria-hidden="true"></span>
+                            </div>
+                            <div class="skill-meter">
+                                <div class="skill-meter-fill" data-fill="92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-2">
+                                <span>Effective communication</span>
+                                <span class="skill-pulse" aria-hidden="true"></span>
+                            </div>
+                            <div class="skill-meter">
+                                <div class="skill-meter-fill" data-fill="88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-2">
+                                <span>Teamwork & collaboration</span>
+                                <span class="skill-pulse" aria-hidden="true"></span>
+                            </div>
+                            <div class="skill-meter">
+                                <div class="skill-meter-fill" data-fill="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex items-center justify-between mb-2">
+                                <span>Eager to Learn</span>
+                                <span class="skill-pulse" aria-hidden="true"></span>
+                            </div>
+                            <div class="skill-meter">
+                                <div class="skill-meter-fill" data-fill="95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 relative">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center">
+                <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Featured Projects</span>
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card group">
+                    <div class="relative overflow-hidden rounded-t-lg h-64 bg-gradient-to-br from-cyan-600/20 to-blue-600/20">
+                        <img src="Music sound system.png" alt="Music Sounds System" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
+                            <a href="https://ajrecio17.github.io/Music-Sounds-System/" target="_blank" class="px-6 py-3 bg-cyan-500 rounded-lg font-semibold hover:bg-cyan-600 transition-colors">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-slate-800/50">
+                        <h3 class="text-xl font-bold mb-2">Music Sounds System</h3>
+                        <p class="text-gray-400 mb-4">
+                            Interactive music and sounds system featuring dynamic audio playback with visual feedback and responsive controls. Demonstrates proficiency in JavaScript audio APIs and DOM manipulation.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-sm">JavaScript</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">HTML5 Audio</span>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm">DOM API</span>
+                            <span class="px-3 py-1 bg-pink-500/20 text-pink-400 rounded-full text-sm">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card group">
+                    <div class="relative overflow-hidden rounded-t-lg h-64 bg-gradient-to-br from-blue-600/20 to-purple-600/20">
+                        <img src="JC lights and sounds.png" alt="JC Lights & Sounds" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
+                            <a href="https://ajrecio17.github.io/JC-Lights-And-Sounds/index.html" target="_blank" class="px-6 py-3 bg-cyan-500 rounded-lg font-semibold hover:bg-cyan-600 transition-colors">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-slate-800/50">
+                        <h3 class="text-xl font-bold mb-2">JC Lights & Sounds</h3>
+                        <p class="text-gray-400 mb-4">
+                            Interactive lights and sounds application with visual effects and audio synchronization. Built with vanilla JavaScript featuring event handling and real-time visual updates for enhanced user experience.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">JavaScript</span>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm">Visual Effects</span>
+                            <span class="px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-sm">Audio Integration</span>
+                            <span class="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm">HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card group">
+                    <div class="relative overflow-hidden rounded-t-lg h-64 bg-gradient-to-br from-purple-600/20 to-pink-600/20">
+                        <img src="Helena band.png" alt="Helena Band" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
+                            <a href="https://ajrecio17.github.io/Helena-/" target="_blank" class="px-6 py-3 bg-cyan-500 rounded-lg font-semibold hover:bg-cyan-600 transition-colors">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-slate-800/50">
+                        <h3 class="text-xl font-bold mb-2">Helena Band</h3>
+                        <p class="text-gray-400 mb-4">
+                            Dynamic band website showcasing music, artist information, and interactive features. Demonstrates responsive web design principles and modern front-end development techniques.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm">HTML5</span>
+                            <span class="px-3 py-1 bg-pink-500/20 text-pink-400 rounded-full text-sm">CSS3</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">JavaScript</span>
+                            <span class="px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-sm">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card group">
+                    <div class="relative overflow-hidden rounded-t-lg h-64 bg-gradient-to-br from-green-600/20 to-emerald-600/20">
+                        <img src="Insomnia bar.png" alt="Insomnia Bar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
+                            <a href="https://ajrecio17.github.io/Insomnia-Bar/" target="_blank" class="px-6 py-3 bg-cyan-500 rounded-lg font-semibold hover:bg-cyan-600 transition-colors">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-slate-800/50">
+                        <h3 class="text-xl font-bold mb-2">Insomnia Bar</h3>
+                        <p class="text-gray-400 mb-4">
+                            Bar website featuring menu displays, event information, and contact details. Built with clean HTML/CSS and JavaScript for interactive elements and smooth user navigation.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm">HTML5</span>
+                            <span class="px-3 py-1 bg-emerald-500/20 text-emerald-400 rounded-full text-sm">CSS3</span>
+                            <span class="px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-sm">JavaScript</span>
+                            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-sm">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card group">
+                    <div class="relative overflow-hidden rounded-t-lg h-64 bg-gradient-to-br from-yellow-600/20 to-orange-600/20">
+                        <img src="Tadigo taho.png" alt="Tadigo Taho" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
+                            <a href="https://ajrecio17.github.io/Tadigo-Taho/" target="_blank" class="px-6 py-3 bg-cyan-500 rounded-lg font-semibold hover:bg-cyan-600 transition-colors">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-slate-800/50">
+                        <h3 class="text-xl font-bold mb-2">Tadigo Taho</h3>
+                        <p class="text-gray-400 mb-4">
+                            Restaurant website featuring menu items, dining information, and reservation system. Demonstrates ability to create professional business websites with intuitive navigation and responsive layouts.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-sm">HTML5</span>
+                            <span class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">CSS3</span>
+                            <span class="px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-sm">JavaScript</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">Business Site</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card group">
+                    <div class="relative overflow-hidden rounded-t-lg h-64 bg-gradient-to-br from-indigo-600/20 to-violet-600/20">
+                        <img src="Mens apparel.png" alt="Mens Apparel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span class="px-6 py-3 text-gray-300 font-semibold">Portfolio Project</span>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-slate-800/50">
+                        <h3 class="text-xl font-bold mb-2">Mens Apparel</h3>
+                        <p class="text-gray-400 mb-4">
+                            Fashion e-commerce website for men's apparel. Showcases product display, styling, and professional business website design principles. Built with modern web technologies for smooth user experience.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-indigo-500/20 text-indigo-400 rounded-full text-sm">HTML5</span>
+                            <span class="px-3 py-1 bg-violet-500/20 text-violet-400 rounded-full text-sm">CSS3</span>
+                            <span class="px-3 py-1 bg-pink-500/20 text-pink-400 rounded-full text-sm">E-Commerce</span>
+                            <span class="px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-sm">UI Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card group">
+                    <div class="relative overflow-hidden rounded-t-lg h-64 bg-gradient-to-br from-rose-600/20 to-red-600/20">
+                        <img src="SKentral portal.png" alt="SKentral Portal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span class="px-6 py-3 text-gray-300 font-semibold">Portfolio Project</span>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-slate-800/50">
+                        <h3 class="text-xl font-bold mb-2">SKentral Portal</h3>
+                        <p class="text-gray-400 mb-4">
+                            Enterprise portal dashboard with modern interface design. Demonstrates ability to create professional administrative interfaces with clean layouts and intuitive navigation for complex data management.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-rose-500/20 text-rose-400 rounded-full text-sm">HTML5</span>
+                            <span class="px-3 py-1 bg-red-500/20 text-red-400 rounded-full text-sm">CSS3</span>
+                            <span class="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-full text-sm">Dashboard</span>
+                            <span class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">Admin Panel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Education -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 relative">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center">
+                <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Education & Certifications</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Education -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-cyan-400 mb-4">Education</h3>
+                    <div class="cert-card">
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-graduation-cap text-2xl text-cyan-400 mt-1"></i>
+                            <div>
+                                <h4 class="text-lg font-bold">Bachelor of Science in Information Technology</h4>
+                                <p class="text-gray-400">Laguna State Polytechnic University</p>
+                                <p class="text-sm text-gray-500">2022 - 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-school text-2xl text-blue-400 mt-1"></i>
+                            <div>
+                                <h4 class="text-lg font-bold">Senior High School (STEM)</h4>
+                                <p class="text-gray-400">L. Bernardo Memorial High School, Luisiana, Laguna</p>
+                                <p class="text-sm text-gray-500">2018 - 2020</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-school text-2xl text-blue-400 mt-1"></i>
+                            <div>
+                                <h4 class="text-lg font-bold">Junior High School</h4>
+                                <p class="text-gray-400">L. Bernardo Memorial High School, Luisiana, Laguna</p>
+                                <p class="text-sm text-gray-500">2014 - 2018</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-school text-2xl text-blue-400 mt-1"></i>
+                            <div>
+                                <h4 class="text-lg font-bold">San Antonio Elementary School</h4>
+                                <p class="text-gray-400">Luisiana, Laguna</p>
+                                <p class="text-sm text-gray-500">2008 - 2014</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-4">Certifications & Learning</h3>
+                    
+                    <div class="cert-card">
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-certificate text-2xl text-yellow-400 mt-1"></i>
+                            <div>
+                                <h4 class="text-lg font-bold">Cisco - Linux Essentials</h4>
+                                <p class="text-gray-400">Cisco Networking Academy</p>
+                                <p class="text-sm text-gray-500">2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-certificate text-2xl text-blue-400 mt-1"></i>
+                            <div>
+                                <h4 class="text-lg font-bold">Cisco - Operating System Basics</h4>
+                                <p class="text-gray-400">Cisco Networking Academy</p>
+                                <p class="text-sm text-gray-500">2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-certificate text-2xl text-purple-400 mt-1"></i>
+                            <div>
+                                <h4 class="text-lg font-bold">Responsible Technology: Ethics in IT Systems</h4>
+                                <p class="text-gray-400">2025</p>
+                                <p class="text-sm text-gray-500">Professional development</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-certificate text-2xl text-cyan-400 mt-1"></i>
+                            <div>
+                                <h4 class="text-lg font-bold">The AI-Cloud Synergy: How AI is Shaping the Cloud</h4>
+                                <p class="text-gray-400">2025</p>
+                                <p class="text-sm text-gray-500">Emerging tech</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 relative">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center">
+                <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Get In Touch</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-envelope text-cyan-400 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-1">Email</h3>
+                            <a href="mailto:amiljulius17@gmail.com" class="text-gray-400 hover:text-cyan-400 transition-colors">amiljulius17@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-phone text-blue-400 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-1">Phone</h3>
+                            <a href="tel:+639202129276" class="text-gray-400 hover:text-blue-400 transition-colors">+63 920 212 9276</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-map-marker-alt text-purple-400 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-1">Location</h3>
+                            <p class="text-gray-400">82 Bala Street, Brgy. San Antonio, Luisiana, Laguna 4032</p>
+                            <p class="text-gray-500 text-sm">3818 - E, A. Mabini Street, Brgy. Don Galo, Parañaque City 1700</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="pt-4">
+                        <h3 class="text-lg font-bold mb-4">Connect With Me</h3>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/ajrecio17" class="w-12 h-12 bg-slate-800 border border-cyan-500/30 rounded-lg flex items-center justify-center hover:bg-cyan-500/20 transition-colors" aria-label="GitHub">
+                                <i class="fab fa-github text-cyan-400 text-lg"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/amil-julius-recio" class="w-12 h-12 bg-slate-800 border border-blue-500/30 rounded-lg flex items-center justify-center hover:bg-blue-500/20 transition-colors" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin text-blue-400 text-lg"></i>
+                            </a>
+                        </div>
+                        <p class="text-sm text-gray-500 pt-4">Reference: EVM. G. Rodante C. Estrellado, Administrator & Principal, L. Bernardo Memorial High School | Phone: 09204305265</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form id="contact-form" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-semibold mb-2">Full Name</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-slate-800 border border-gray-700 rounded-lg focus:border-cyan-500 focus:outline-none transition-colors text-white" placeholder="Your name">
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-sm font-semibold mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-slate-800 border border-gray-700 rounded-lg focus:border-cyan-500 focus:outline-none transition-colors text-white" placeholder="your.email@example.com">
+                    </div>
+
+                    <div>
+                        <label for="subject" class="block text-sm font-semibold mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" required class="w-full px-4 py-3 bg-slate-800 border border-gray-700 rounded-lg focus:border-cyan-500 focus:outline-none transition-colors text-white" placeholder="Project inquiry">
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-semibold mb-2">Message</label>
+                        <textarea id="message" name="message" required rows="5" class="w-full px-4 py-3 bg-slate-800 border border-gray-700 rounded-lg focus:border-cyan-500 focus:outline-none transition-colors text-white resize-none" placeholder="Tell me about your project..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 transform hover:scale-105">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-cyan-400 transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-cyan-400 transition-colors">About</a></li>
+                        <li><a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a></li>
+                        <li><a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Resources</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-cyan-400 transition-colors">Blog</a></li>
+                        <li><a href="#contact" class="hover:text-cyan-400 transition-colors">Resume (request)</a></li>
+                        <li><a href="#" class="hover:text-cyan-400 transition-colors">Case Studies</a></li>
+                        <li><a href="#" class="hover:text-cyan-400 transition-colors">Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Stay Updated</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to my newsletter for tech insights and project updates.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="your@email.com" class="flex-1 px-4 py-2 bg-slate-800 border border-gray-700 rounded-l-lg focus:outline-none text-white">
+                        <button type="submit" class="px-4 py-2 bg-cyan-500 rounded-r-lg hover:bg-cyan-600 transition-colors font-semibold">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-400">
+                <p>&copy; 2026 Amil Julius G. Recio. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-cyan-400 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-cyan-400 transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-cyan-400 transition-colors">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

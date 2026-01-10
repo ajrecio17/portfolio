@@ -1,0 +1,293 @@
+{
+  "portfolio": {
+    "personalInfo": {
+      "fullName": "Alex Mitchell",
+      "title": "Full Stack Developer & IT Specialist",
+      "email": "alex@techcorp.com",
+      "phone": "+1 (415) 555-2671",
+      "location": "San Francisco, CA, USA",
+      "bio": "Crafting elegant solutions to complex problems. Specialized in building scalable applications with modern technologies, cloud infrastructure, and creating seamless user experiences."
+    },
+    "branding": {
+      "logoText": "</> amiljeffrey",
+      "favicon": "🚀",
+      "primaryColor": "#06b6d4",
+      "secondaryColor": "#3b82f6",
+      "accentColor": "#a855f7"
+    },
+    "social": {
+      "github": "https://github.com",
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "instagram": "https://instagram.com",
+      "portfolio": "https://yourportfolio.com"
+    },
+    "stats": {
+      "projectsCompleted": 50,
+      "yearsExperience": 8,
+      "clientSatisfaction": 100
+    },
+    "skills": {
+      "frontend": [
+        {
+          "name": "React/Next.js",
+          "level": 95
+        },
+        {
+          "name": "TypeScript",
+          "level": 90
+        },
+        {
+          "name": "Tailwind CSS",
+          "level": 92
+        },
+        {
+          "name": "Vue.js / Svelte",
+          "level": 85
+        }
+      ],
+      "backend": [
+        {
+          "name": "Node.js / Express",
+          "level": 93
+        },
+        {
+          "name": "Python / Django",
+          "level": 88
+        },
+        {
+          "name": "PHP / Laravel",
+          "level": 85
+        },
+        {
+          "name": "RESTful APIs / GraphQL",
+          "level": 91
+        }
+      ],
+      "devops": [
+        {
+          "name": "Docker / Kubernetes",
+          "level": 89
+        },
+        {
+          "name": "AWS / Cloud Services",
+          "level": 87
+        },
+        {
+          "name": "Git / CI-CD",
+          "level": 92
+        },
+        {
+          "name": "Databases (SQL/NoSQL)",
+          "level": 90
+        }
+      ],
+      "databases": [
+        {
+          "name": "PostgreSQL",
+          "level": 94
+        },
+        {
+          "name": "MongoDB",
+          "level": 91
+        },
+        {
+          "name": "Redis / Caching",
+          "level": 88
+        },
+        {
+          "name": "Firebase / Supabase",
+          "level": 86
+        }
+      ],
+      "professional": [
+        {
+          "name": "Team Leadership",
+          "level": 90
+        },
+        {
+          "name": "Project Management",
+          "level": 88
+        },
+        {
+          "name": "Problem Solving",
+          "level": 95
+        },
+        {
+          "name": "Communication",
+          "level": 92
+        }
+      ]
+    },
+    "projects": [
+      {
+        "id": 1,
+        "title": "E-Commerce Platform",
+        "description": "A full-stack e-commerce solution with real-time inventory, payment processing, and admin dashboard. Built with React, Node.js, and PostgreSQL.",
+        "icon": "fa-shopping-cart",
+        "iconColor": "cyan",
+        "technologies": [
+          "React",
+          "Node.js",
+          "PostgreSQL",
+          "Stripe"
+        ],
+        "liveLink": "#",
+        "codeLink": "#"
+      },
+      {
+        "id": 2,
+        "title": "Analytics Dashboard",
+        "description": "Real-time analytics platform with interactive charts, data visualization, and AI-powered insights. Built with Next.js and D3.js.",
+        "icon": "fa-chart-line",
+        "iconColor": "blue",
+        "technologies": [
+          "Next.js",
+          "D3.js",
+          "MongoDB",
+          "WebSockets"
+        ],
+        "liveLink": "#",
+        "codeLink": "#"
+      },
+      {
+        "id": 3,
+        "title": "Cloud Infrastructure Manager",
+        "description": "AWS multi-cloud management tool with automated deployment, monitoring, and scaling. Features Kubernetes orchestration.",
+        "icon": "fa-network-wired",
+        "iconColor": "purple",
+        "technologies": [
+          "AWS",
+          "Kubernetes",
+          "Docker",
+          "Python"
+        ],
+        "liveLink": "#",
+        "codeLink": "#"
+      },
+      {
+        "id": 4,
+        "title": "Real-Time Chat Application",
+        "description": "Feature-rich messaging platform with end-to-end encryption, video calls, and file sharing. Built with Socket.io and React.",
+        "icon": "fa-comments",
+        "iconColor": "green",
+        "technologies": [
+          "Socket.io",
+          "React",
+          "WebRTC",
+          "Firebase"
+        ],
+        "liveLink": "#",
+        "codeLink": "#"
+      }
+    ],
+    "experience": [
+      {
+        "id": 1,
+        "title": "Senior Full Stack Engineer",
+        "company": "TechCorp Solutions",
+        "location": "San Francisco, CA",
+        "startDate": 2021,
+        "endDate": "Present",
+        "description": "Led development of microservices architecture handling 10M+ daily requests. Managed team of 5 engineers, implemented CI/CD pipelines reducing deployment time by 60%, and architected cloud infrastructure on AWS.",
+        "technologies": [
+          "React",
+          "Node.js",
+          "AWS",
+          "Kubernetes",
+          "Team Leadership"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Full Stack Developer",
+        "company": "Digital Innovations Inc",
+        "location": "New York, NY",
+        "startDate": 2018,
+        "endDate": 2021,
+        "description": "Developed and maintained 15+ production applications. Optimized database queries improving performance by 40%, implemented real-time features using WebSockets, and mentored junior developers.",
+        "technologies": [
+          "Vue.js",
+          "Python",
+          "PostgreSQL",
+          "Docker",
+          "Mentorship"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Junior Developer",
+        "company": "StartupHub",
+        "location": "Boston, MA",
+        "startDate": 2016,
+        "endDate": 2018,
+        "description": "Built responsive web applications using modern JavaScript frameworks. Collaborated with designers and product teams to deliver user-centric solutions.",
+        "technologies": [
+          "JavaScript",
+          "HTML/CSS",
+          "RESTful APIs",
+          "Git"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "id": 1,
+        "degree": "Bachelor of Science in Computer Science",
+        "institution": "University of Technology",
+        "graduationYear": 2016,
+        "gpa": "3.8/4.0"
+      },
+      {
+        "id": 2,
+        "degree": "Full Stack Web Development Bootcamp",
+        "institution": "Code Academy",
+        "completionYear": 2015,
+        "gpa": null
+      }
+    ],
+    "certifications": [
+      {
+        "id": 1,
+        "title": "AWS Certified Solutions Architect",
+        "issuer": "Amazon Web Services",
+        "issuedDate": 2023,
+        "validUntil": 2025,
+        "icon": "fa-certificate"
+      },
+      {
+        "id": 2,
+        "title": "Kubernetes Application Developer (CKAD)",
+        "issuer": "Linux Foundation",
+        "issuedDate": 2023,
+        "validUntil": 2026,
+        "icon": "fa-certificate"
+      },
+      {
+        "id": 3,
+        "title": "Google Cloud Professional Data Engineer",
+        "issuer": "Google Cloud",
+        "issuedDate": 2022,
+        "validUntil": 2024,
+        "icon": "fa-certificate"
+      }
+    ],
+    "seo": {
+      "title": "Alex Mitchell | Full Stack Developer & IT Specialist",
+      "description": "Professional portfolio showcasing full-stack development expertise, cloud infrastructure, and IT solutions.",
+      "keywords": [
+        "full stack developer",
+        "IT specialist",
+        "web development",
+        "cloud infrastructure",
+        "react",
+        "nodejs",
+        "aws"
+      ]
+    },
+    "analytics": {
+      "googleAnalyticsId": "G-XXXXXXXXXX",
+      "enableAnalytics": false
+    }
+  }
+}
