@@ -16,6 +16,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
 
+// Static form endpoint (FormSubmit). Replace with your preferred provider if needed.
+const FORM_ENDPOINT = 'https://formsubmit.co/amiljuliusr1@gmail.com';
+
 mobileMenuBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
 });
@@ -148,18 +151,30 @@ if (contactForm) {
             return;
         }
 
-        // Here you would typically send the form data to a backend service
-        // For now, we'll just show a success message
-        console.log('Form Data:', { name, email, subject, message });
-        
-        // Show success notification
-        showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
-        
-        // Reset form
-        contactForm.reset();
-        
-        // Optional: Send email via third-party service (like EmailJS)
-        // sendEmailViaEmailJS(name, email, subject, message);
+        const formData = new FormData();
+        formData.append('name', name);
+        formData.append('email', email);
+        formData.append('subject', subject);
+        formData.append('message', message);
+        formData.append('_subject', `Portfolio message: ${subject}`);
+        formData.append('_captcha', 'false');
+
+        fetch(FORM_ENDPOINT, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                Accept: 'application/json'
+            }
+        }).then((response) => {
+            if (response.ok) {
+                showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
+                contactForm.reset();
+            } else {
+                showNotification('Could not send right now. Please try again or email me directly.', 'error');
+            }
+        }).catch(() => {
+            showNotification('Network error. Please try again.', 'error');
+        });
     });
 }
 
